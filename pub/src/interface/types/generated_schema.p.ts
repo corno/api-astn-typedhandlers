@@ -5,12 +5,17 @@
 */
 import * as pt from "pareto-core-types"
 
+export type TReference<PT> = {
+    readonly "name": string
+    readonly "referencee": pt.Lazy<PT>
+}
+
 export type T__types = {
     readonly "value": T__value
 }
 
 export type T__root = {
-    readonly "root type": pt.Reference<T__types>
+    readonly "root type": TReference<T__types>
     readonly "types": pt.Dictionary<T__types>
 }
 
@@ -36,7 +41,7 @@ export type T__list = {
     readonly "value": T__value
 }
 
-export type T__multiline_string = { }
+export type T__multiline_string = {}
 
 export type T__simple_string_type = {
     readonly "default value": string
@@ -48,12 +53,12 @@ export type T__options = {
 }
 
 export type T__tagged_union = {
-    readonly "default option": pt.Reference<T__options>
+    readonly "default option": TReference<T__options>
     readonly "options": pt.Dictionary<T__options>
 }
 
 export type T__type_reference = {
-    readonly "type": pt.Reference<T__types>
+    readonly "type": TReference<T__types>
 }
 
 export type T__type_TU =

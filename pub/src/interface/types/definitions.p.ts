@@ -1,5 +1,6 @@
 import * as h from "api-astn-handlers"
-import * as typed from "./generated_schema"
+
+import * as typed from "./generated_schema.p"
 
 export type TTypeReferenceDefinition = typed.T__type_reference
 
@@ -28,8 +29,8 @@ export type TSimpleStringDefinition = typed.T__simple_string
 export type TMultiLineStringDefinition = typed.T__multiline_string
 
 
-export type TGroupType<Annotation> =
-    | ["verbose", h.OpenObjectToken<Annotation>]
-    | ["shorthand", h.OpenArrayToken<Annotation>]
+export type TGroupType<PAnnotation> =
+    | ["verbose", h.TOpenObjectToken<PAnnotation>]
+    | ["shorthand", h.TOpenArrayToken<PAnnotation>]
     | ["mixin", null]
     | ["omitted", null]

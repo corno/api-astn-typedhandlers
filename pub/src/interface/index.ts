@@ -1,3 +1,3 @@
-export * from "./interfaces/handlers"
-export * from "./types/definitions"
-export * from "./types/generated_schema"
+export * from "./interfaces/handlers.p"
+export * from "./types/definitions.p"
+export * from "./types/generated_schema.p"
