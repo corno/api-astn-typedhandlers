@@ -23,7 +23,7 @@
     "url": "git+https://github.com/corno/api-astn-typedhandlers.git"
   },
   "types": "dist/index.d.ts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "interface-fingerprint": "1b60bff3d0488a84975d0b7044cb1d308925006b",
   "content-fingerprint": "bd19c3aa162d13bffe6ec4c6523d9cd62fb30cb4"
 }
